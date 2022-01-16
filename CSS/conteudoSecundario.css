@@ -20,3 +20,8 @@
     font-size: 1.125rem;
     font-weight: 300;
 }
+@media screen and (max-width: 600px){
+    .conteudo__secundario{
+        padding: 1.5rem ;
+    }
+}
