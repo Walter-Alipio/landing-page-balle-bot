@@ -1,0 +1,10 @@
+.rodape{
+    padding:2rem;
+    border-top: 0.4px solid #fff2e7;
+}
+
+.rodape-imagem{
+    height: 3rem;
+    display: block; /* bloqueia a linha inteira */
+    margin: 0 auto; /* alinha o espaçamento lateral automaticamente */
+}
