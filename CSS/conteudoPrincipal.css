@@ -52,3 +52,19 @@
 .conteudo__principal-imagem{
     height: 26.875rem;
 }
+@media screen and (max-width: 600px){
+    .conteudo__principal{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        text-align: center;
+    }
+    .conteudo__principal-imagem{
+        height: 12rem;
+        margin-bottom: 1rem;
+    }
+    .conteudo__principal-botao{
+        display: block;
+        width: 100%;
+    }
+}
