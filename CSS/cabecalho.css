@@ -1,0 +1,21 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px ;
+}
+.cabecalho__logo{
+    height: 72px;
+}
+.cabecalho__menu{
+    text-decoration: none;
+    display: flex;
+    gap: 32px;
+    color: #0000;
+}
+
+.cabecalho__menu-item{
+    font-family: var(--fonte-conteudo);
+    color: #fff2e7;
+    font-size: 1.125rem;
+}
