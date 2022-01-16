@@ -7,19 +7,37 @@
     <title>Balle Bot - Modere a sua comunidade do Discord</title>
 </head>
 <body>
-    <header>
-        <img src="/assets/Logo.svg" alt="Logo da comunidade Ballerini">
-        <nav>
-            <a href="#">Comunidade Ballerini</a>
-            <a href="#">Tutorial</a>
-            <a href="#">Open Source</a>
-            <a href="#">Comandos</a>
+    <header class="cabecalho">
+        <img src="/assets/Logo.svg" alt="Logo da comunidade Ballerini" class="cabecalho__logo">
+        <nav class="cabecalho__menu">
+            <a href="#" class="cabecalho__menu-item">Comunidade Ballerini</a>
+            <a href="#" class="cabecalho__menu-item">Tutorial</a>
+            <a href="#" class="cabecalho__menu-item">Open Source</a>
+            <a href="#" class="cabecalho__menu-item">Comandos</a>
         </nav>
     </header>
 
-    <main></main>
+    <main class="conteudo">
+        <section class="conteudo__principal">
+            <div class="conteudo__principal-texto">
+                <h1 class="conteudo__principal-titulo">Balle Bot</h1>
+                <h2 class="conteudo__principal-subtitulo">Deixe a sua comunidade segura de um jeito fácil</h2>
+                <button class="conteudo__principal-botao">Me adicione!</button>
+            </div>
+            <img src="/assets/Bot-image.svg" class="conteudo__principal-imagem" alt="Imagem da Balle Bot">
+        </section>
 
-    <footer></footer>
+        <section class="conteudo__secundario">
+            <h3 class="conteudo__secundario-titulo">O que ela faz por você?</h3>
+            <p class="conteudo__secundario-texto">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
+            <p class="conteudo__secundario-texto">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
+            <p class="conteudo__secundario-texto">3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img class="rodape-imagem" src="/assets/BALLERINI.svg" alt="Ballerini">
+    </footer>
     
 </body>
 </html>
