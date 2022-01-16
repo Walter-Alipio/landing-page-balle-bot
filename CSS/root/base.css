@@ -1,13 +1,14 @@
-:root{
-    --font-titulo: 'Righteous', cursive;
-    --font-conteudo: 'Sarala', sans-serif;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+
+    --fonte-titulo: 'Righteous', cursive;
+    --fonte-conteudo: 'Sarala', sans-serif;
+}
+a{
+   color: black;
 }
 
 body{
