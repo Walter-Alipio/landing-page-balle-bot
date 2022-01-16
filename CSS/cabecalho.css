@@ -7,13 +7,14 @@
 .cabecalho__logo{
     height: 4.5rem;
 }
+.cabecalho__menu-botao{
+    display: none;
+}
 .cabecalho__menu{
-    text-decoration: none;
     display: flex;
     gap: 2rem;
     color: #0000;
 }
-
 .cabecalho__menu-item{
     color: #fff2e7;
     font-size: 1.125rem;
@@ -34,4 +35,80 @@ a:nth-child(3).cabecalho__menu-item:hover{
 a:nth-child(4).cabecalho__menu-item:hover{
     background-color: rgba(22, 6, 250, 0.1);
     box-shadow: 1px 1px 30px rgb(22, 6, 250, 0.5);
+}
+
+@media screen and (max-width: 600px){
+    .cabecalho{
+        justify-content: space-between;
+    }
+    .cabecalho__menu-botao{
+        display: block;
+    }
+    .cabecalho__menu{
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       width: 100%;
+       top: 70px;
+       right: 0;
+       background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+       height: 0px;
+       transition: .6s; 
+       z-index: 1000;
+       visibility: hidden;
+       overflow-y: hidden;
+    }
+
+    .active{  
+       height: calc(100vh - 70px);
+       visibility: visible;
+       /* overflow-y: auto; */
+    }
+
+    .cabecalho__menu-item{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    a:nth-child(n).cabecalho__menu-item:hover{
+        background-color: inherit;
+        box-shadow: none;
+    }
+    .cabecalho__menu-botao{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    /* criando um menu hamburguer apenas com css */
+    .cabecalho__menu-hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+    }
+    .cabecalho__menu-hamburguer::after, .cabecalho__menu-hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+        transition: .5s;
+    }
+
+    .button-active .cabecalho__menu-hamburguer{
+        border-top-color: transparent;
+    }
+    .button-active .cabecalho__menu-hamburguer::before{
+        transform: rotate(135deg);
+    }
+    .button-active .cabecalho__menu-hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+   
 }

@@ -22,7 +22,11 @@
 <body>
     <header class="cabecalho">
         <img src="/assets/Logo.svg" alt="Logo da comunidade Ballerini" class="cabecalho__logo">
-        <nav class="cabecalho__menu">
+        <button class="cabecalho__menu-botao" data-menu="button">Menu
+            <span class="cabecalho__menu-hamburguer"></span>
+        </button>
+        <nav class="cabecalho__menu" data-menu="menu">
+
             <a href="https://discord.gg/wagxzStdcR" class="cabecalho__menu-item">Comunidade Ballerini</a>
             <a href="#" class="cabecalho__menu-item">Tutorial</a>
             <a href="#" class="cabecalho__menu-item">Open Source</a>
@@ -51,6 +55,6 @@
     <footer class="rodape">
         <img class="rodape-imagem" src="/assets/BALLERINI.svg" alt="Ballerini">
     </footer>
-    
+    <script src="/JS/menuMobile.js"></script>
 </body>
 </html>
