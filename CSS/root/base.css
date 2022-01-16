@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 
     --fonte-titulo: 'Righteous', cursive;
     --fonte-conteudo: 'Sarala', sans-serif;
 }
+@media screen and (max-width: 1400px){
+    *{
+        font-size: 14px;
+    }
+}
+
 a{
    color: black;
 }
@@ -14,4 +21,8 @@ a{
 body{
     font-size: 100%;
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    color: #fff2e7;
+
+    font-family: var(--fonte-conteudo);
+    font-weight: 400;
 }
