@@ -1,0 +1,22 @@
+.conteudo__secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.conteudo__secundario-titulo{
+    border-top: 0.4px solid #fff2e7;
+
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+}
+
+.conteudo__secundario-texto{
+    font-size: 1.125rem;
+    font-weight: 300;
+}
