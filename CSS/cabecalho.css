@@ -99,7 +99,7 @@ a:nth-child(4).cabecalho__menu-item:hover{
         position: relative;
         transition: .5s;
     }
-
+    /* a classe button-active é ativada via js */
     .button-active .cabecalho__menu-hamburguer{
         border-top-color: transparent;
     }
@@ -110,5 +110,4 @@ a:nth-child(4).cabecalho__menu-item:hover{
         transform: rotate(-135deg);
         top: -7px;
     }
-   
 }
